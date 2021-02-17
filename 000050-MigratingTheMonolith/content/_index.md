@@ -1,31 +1,43 @@
 +++
-title = "EC2 Access Control with IAM Tagging"
+title = "Migrating the Monolith"
 date = 2021
 weight = 1
-chapter = true
+chapter = false
 +++
 
-# CẤP ĐỘ 300: QUẢN LÝ TRUY CẬP DỊCH VỤ EC2 VỚI RESOURCE TAGS THÔNG QUA DỊCH VỤ IAM
+# Migrating the Monolith
 
-This hands-on lab will guide you through the steps to configure example AWS Identity and Access Management (IAM) policies, and a AWS IAM role with associated permissions to use EC2 resource tags for access control. Using tags is powerful as it helps you scale your permission management, however you need to be careful about the management of the tags which you will learn in this lab. In this lab you will create a series of policies attached to a role that can be assumed by an individual such as an EC2 administrator. This allows the EC2 administrator to create tags when creating resources only if they match the requirements, and control which existing resources and values they can tag.
+In this lab you learn how to deploy our fictitious web application TravelBuddy to run on AWS.
 
-#### Aims
-1. Đặc quyền IAM tối thiểu (IAM least privilege)
-2. Đặc tả chính sách IAM cùng với các điều kiện (IAM policy conditions)
+You will then learn how to use the AWS SDKs to query and manipulate the AWS environment from code, with two coding exercises.
 
-#### Prerequistes
-1. Một tài khoản AWS được dùng cho mục đích TESTING.
-2. Một IAM user (đã cấu hình MFA) có thể thực hiện tác vụ ```assume role```.
+#### Topics Covered
+By the end of this lab, you will be able to:
 
-{{% notice info %}}
-Khi hoàn thành bài thực hành này, bạn sẽ bị tính phí đối với những tài nguyên không nằm trong hạng mục AWS Free Tier.
-{{% /notice %}}
+- Use the AWS Console to deploy and verify AWS resources using an AWS CloudFormation template.
+- Use AWS Tools for Eclipse to deploy a Java Application to an Elastic Beanstalk environment.
+- Install and configure the AWS Elastic Beanstalk CLI tool.
+- Use the AWS Elastic Beanstalk CLI to deploy an update to an existing Elastic Beanstalk environment.
+- Use the AWS SDK to query and modify the AWS environment using code.
+- Use the AWS SDK to create an S3 bucket, upload a file and delete the file and bucket.
+
+#### Technical Knowledge Prerequisites
+To successfully complete this lab, you should be familiar the Eclipse application development environment, the Java programming language and the command line/terminal.
+
+#### Environment
+All the resources required to begin this lab have already been provisioned and set up for you. If running in your own account, use this CloudFormation template
+
+The following diagram depicts the resources that were deployed in your AWS account.
+
+![Diagram](../../../images/1/0.png?width=50pc)
 
 #### Contents
 
-Trong bài thực hành này, chúng ta sẽ có nội dung như sau:
-
-1. [Create IAM Policy](1-create-iam-policies/)
-2. [Create IAM Role](2-create-iam-role/)
-3. [Testing Role](3-test-role/)
-4. [Clean Up Resources](4-tear-down/)
+1. [Prerequisite](1-prerequisites/)
+2. [Database Setup](2-setup-database/)
+3. [Test Locally](3-test-local/)
+4. [Deploy application](4-deploy-app/)
+5. [Update the Application](5-update-app/)
+6. [Query the API](6-query-api/)
+7. [Conclusion](7-conclusion/)
+8. [References](8-resources/)

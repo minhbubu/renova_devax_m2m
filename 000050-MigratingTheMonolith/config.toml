@@ -18,7 +18,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "DevAx Academy - Monoliths to Microservices"
+title = "DevAx - Monoliths to Microservices - Migrating the Monolith"
 weight = 1
 languageName = "English"
 
@@ -35,7 +35,7 @@ url = "https://www.facebook.com/groups/660548818043427/"
 weight = 20
 
 [Languages.vi]
-title = "DevAx Academy - Chuyển đổi Monoliths sang Microservices"
+title = "DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith"
 weight = 2
 languageName = "Tiếng Việt"
 

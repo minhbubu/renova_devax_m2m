@@ -1,31 +1,43 @@
 +++
-title = "Quản lý Truy cập EC2 với IAM Tagging"
+title = "Chuyển đổi Ứng dụng Monolith"
 date = 2021
 weight = 1
-chapter = true
+chapter = false
 +++
 
-# CẤP ĐỘ 300: QUẢN LÝ TRUY CẬP DỊCH VỤ EC2 VỚI RESOURCE TAGS THÔNG QUA DỊCH VỤ IAM
+# Chuyển đổi Ứng dụng Monolith
 
-Bài thực hành này sẽ mang chúng ta đến với quá trình quản lý truy cập dịch vụ EC2 bằng Resource Tags thông qua cấu hình chi tiết các IAM policies và roles với những permissions cụ thể. Việc sử dụng Resource Tags sẽ vô cùng hữu ích khi chúng ta dần dần mở rộng trong việc quản trị phân quyền, tuy nhiên cũng cần phải đặc biệt chú ý một số vấn đề nhất định (sẽ đề cập ở các phần tiếp theo). Ở bài thực hành này, chúng ta sẽ liên tiếp tạo ra các policies cùng với role mà có thể sử dụng được cho các cá thể nhất định, ví dụ như là EC2 Administrator. Các policies này sẽ chỉ cho phép EC2 Administrator tạo ra các tài nguyên liên quan khi và chỉ khi thoả mãn các yêu cầu được đề ra dựa trên những Resource Tags thông qua việc quản lý truy cập.
+In this lab you learn how to deploy our fictitious web application **TravelBuddy** to run on AWS.
 
-#### Mục tiêu
-1. Đặc quyền IAM tối thiểu (IAM least privilege)
-2. Đặc tả chính sách IAM cùng với các điều kiện (IAM policy conditions)
+You will then learn **how to use the AWS SDKs** to query and manipulate the AWS environment from code, with two coding exercises.
 
-#### Điều kiện cần
-1. Một tài khoản AWS được dùng cho mục đích TESTING.
-2. Một IAM user (đã cấu hình MFA) có thể thực hiện tác vụ ```assume role```.
+#### Topics Covered
+By the end of this lab, you will be able to:
 
-{{% notice info %}}
-Khi hoàn thành bài thực hành này, bạn sẽ bị tính phí đối với những tài nguyên không nằm trong hạng mục AWS Free Tier.
-{{% /notice %}}
+- Use the AWS Console to deploy and verify AWS resources using an AWS CloudFormation template.
+- Use AWS Tools for Eclipse to deploy a Java Application to an Elastic Beanstalk environment.
+- Install and configure the AWS Elastic Beanstalk CLI tool.
+- Use the AWS Elastic Beanstalk CLI to deploy an update to an existing Elastic Beanstalk environment.
+- Use the AWS SDK to query and modify the AWS environment using code.
+- Use the AWS SDK to create an S3 bucket, upload a file and delete the file and bucket.
 
-#### Nội dung chính
+#### Technical Knowledge Prerequisites
+To successfully complete this lab, you should be familiar the Eclipse application development environment, the Java programming language and the command line/terminal.
 
-Trong bài thực hành này, chúng ta sẽ có nội dung như sau:
+#### Environment
+All the resources required to begin this lab have already been provisioned and set up for you. If running in your own account, use this CloudFormation template
 
-1. [Tạo IAM Policy](1-create-iam-policies/)
-2. [Tạo IAM Role](2-create-iam-role/)
-3. [Kiểm tra hoạt động của Role](3-test-role/)
-4. [Dọn dẹp tài nguyên](4-tear-down/)
+The following diagram depicts the resources that were deployed in your AWS account.
+
+![Diagram](../../../images/1/0.png?width=50pc)
+
+#### Contents
+
+1. [Prerequisite](1-prerequisites/)
+2. [Database Setup](2-setup-database/)
+3. [Test Locally](3-test-local/)
+4. [Deploy application](4-deploy-app/)
+5. [Update the Application](5-update-app/)
+6. [Query the API](6-query-api/)
+7. [Conclusion](7-conclusion/)
+8. [References](8-resources/)
