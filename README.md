@@ -6,5 +6,5 @@
 - Mr. Nguyen Gia Hung (Champion Certified Instructor)
 
 ## Authors
-- Pham Do Phuong Uyen (Solution Architect)
+- Do Thi Phuong Uyen (Solution Architect)
 - Le Duy Minh (Solution Architect)
