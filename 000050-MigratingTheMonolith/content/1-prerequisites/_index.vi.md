@@ -1,28 +1,26 @@
 +++
-title = "Các bước chuẩn bị"
+title = "Chuẩn bị"
 date = 2021
 weight = 1
 chapter = false
 pre = "<b>1. </b>"
 +++
 
-Welcome to the first module in this workshop! This module involves getting access to a developer environment that we’ve provisioned for you. The developer environment contains all the software and network access required to get you up and running with the labs in record time.
+Chào mừng đến với học phần đầu tiên trong hội thảo này! Mô-đun này liên quan đến việc có được truy cập vào môi trường nhà phát triển mà chúng tôi đã cung cấp cho bạn. Môi trường dành cho nhà phát triển chứa tất cả phần mềm và quyền truy cập mạng cần thiết để giúp bạn thiết lập và thực thi bài thực hành.
 
-We’ve chosen to do this as the main aim for this workshop is learning the content in each module, not setting up your local machines. It also provides a consistent environment between you and your fellow colleagues to eliminate the weird “works on my machine” behavior.
+Mục đích chính của hội thảo này là tìm hiểu nội dung trong từng mô-đun, không phải thiết lập máy tại môi trường cục bộ của bạn. Bài thực hành sẽ cung cấp môi trường được thiết lập sẵn
 
-If you were planning on running this lab on your own machine, you’ll have to adapt the instructions accordingly. Make sure to manually install the software listed in the **Development Environment** section below.
+**Nội dung**
+- [Chủ đề được bao gồm](#chủ-đề-được-bao-gồm)
+- [Môi trường phát triển](#môi-trường-phát-triển)
 
-**Contents**
-- [Topics Covered](#topics-covered)
-- [Development Environment](#development-environment)
+#### Chủ đề được bao gồm
+Sau bài thực hành này, bạn sẽ có thể:
 
-#### Topics Covered
-By the end of this lab, you will be able to:
+Kết nối tới một máy ảo đang chạy windows.
 
-Connect to a running windows instance
-
-#### Development Environment
-A fully fledged development environment has already been created for you with the following resources installed:
+#### Môi trường phát triển
+Môi trường yêu cầu trong bài thực hành bao gồm các tài nguyên sau:
 
 - Java 8 JDK
 - Apache Maven
