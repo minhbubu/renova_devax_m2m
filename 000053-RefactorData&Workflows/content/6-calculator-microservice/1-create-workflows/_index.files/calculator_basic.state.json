@@ -1,0 +1,65 @@
+{
+  "Comment": "Simple Calculator Step Functions Example",
+  "StartAt": "state.start.operatorSelector",
+  "States": {
+    "state.start.operatorSelector": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.operator",
+          "StringEquals": "add",
+          "Next": "state.process.operator.add"
+        },
+        {
+          "Variable": "$.operator",
+          "StringEquals": "subtract",
+          "Next": "state.process.operator.subtract"
+        },
+        {
+          "Variable": "$.operator",
+          "StringEquals": "multiply",
+          "Next": "state.process.operator.multiply"
+        },
+        {
+          "Variable": "$.operator",
+          "StringEquals": "divide",
+          "Next": "state.process.operator.divide"
+        }
+      ],
+      "Default": "state.process.operator.unknown"
+    },
+    "state.process.operator.add": {
+      "Type": "Pass",
+      "Comment": "Performs an addition on the operands provided",
+      "Next": "state.process.displayResult"
+    },
+    "state.process.operator.subtract": {
+      "Type": "Pass",
+      "Comment": "Performs an subtraction on the operands provided",
+      "Next": "state.process.displayResult"
+    },
+    "state.process.operator.multiply": {
+      "Type": "Pass",
+      "Comment": "Performs an multiplication on the operands provided",
+      "Next": "state.process.displayResult"
+    },
+    "state.process.operator.divide": {
+      "Type": "Pass",
+      "Comment": "Performs an division on the operands provided",
+      "Next": "state.process.displayResult"
+    },
+    "state.process.operator.unknown": {
+      "Type": "Fail",
+      "Error": "UNKNOWN_OPERATOR",
+      "Cause" : "The operator provided is not supported"
+    },
+    "state.process.displayResult": {
+      "Type": "Pass",
+      "Next": "state.process.complete"
+    },
+    "state.process.complete": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}

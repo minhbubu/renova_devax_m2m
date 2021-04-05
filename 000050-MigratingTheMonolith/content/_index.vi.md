@@ -7,37 +7,35 @@ chapter = false
 
 # Chuyển đổi Ứng dụng Monolith
 
-In this lab you learn how to deploy our fictitious web application **TravelBuddy** to run on AWS.
+Trong bài thực hành này, bạn sẽ tìm hiểu cách triển khai ứng dụng web **TravelBuddy** để chạy trên AWS
 
-You will then learn **how to use the AWS SDKs** to query and manipulate the AWS environment from code, with two coding exercises.
+Bạn sẽ học cách sử dụng AWS SDKs để truy vấn và thao tác với môi trường AWS thông qua code thông qua 2 bài tập.
 
-#### Topics Covered
-By the end of this lab, you will be able to:
 
-- Use the AWS Console to deploy and verify AWS resources using an AWS CloudFormation template.
-- Use AWS Tools for Eclipse to deploy a Java Application to an Elastic Beanstalk environment.
-- Install and configure the AWS Elastic Beanstalk CLI tool.
-- Use the AWS Elastic Beanstalk CLI to deploy an update to an existing Elastic Beanstalk environment.
-- Use the AWS SDK to query and modify the AWS environment using code.
-- Use the AWS SDK to create an S3 bucket, upload a file and delete the file and bucket.
+#### Nội dung
+Sau khi hoàn thành bài thực hành, bạn sẽ có thể:
 
-#### Technical Knowledge Prerequisites
-To successfully complete this lab, you should be familiar the Eclipse application development environment, the Java programming language and the command line/terminal.
+- Sử dụng AWS Console để triển khai và xác minh các tài nguyên AWS sử dụng AWS CloudFormation template.
+- Sử dụng công cụ AWS Tools cho Eclipse để triển khai ứng dụng Java tới môi trường Elastic Beanstalk.
+- Cài đặt và cấu hình công cụ AWS Elastic Beanstalk CLI
+- Sử dụng AWS Elastic Beanstalk CLI để triển khai bản cập nhật tới một môi trường Elastic Beanstalk đã có.
+- Sử dụng AWS SDK để truy vấn và chỉnh sửa môi trường AWS environment thông qua code
 
-#### Environment
-All the resources required to begin this lab have already been provisioned and set up for you. If running in your own account, use this CloudFormation template
+#### Kiến thức kỹ thuật cần có
+Để có thể hoàn thành bài thực hành này, bạn nên làm quen với môi trường phát triển ứng dụng Eclipse, ngôn ngữ lập trình Java, ngôn ngữ dòng lệnh/terminal.
 
-The following diagram depicts the resources that were deployed in your AWS account.
+#### Môi trường
+Tất cả tài nguyên cần thiết để bắt đầu bài thực hành được cung cấp trong CloudFomation template, sử dụng template này để khởi tạo các tài nguyên cho bài thực hành.
+Sơ đồ sau mô tả các tài nguyên được triển khai trong bài thực hành.
 
 ![Diagram](../../../images/1/0.png?width=50pc)
 
-#### Contents
+#### Nội dung
 
-1. [Prerequisite](1-prerequisites/)
-2. [Database Setup](2-setup-database/)
-3. [Test Locally](3-test-local/)
-4. [Deploy application](4-deploy-app/)
-5. [Update the Application](5-update-app/)
-6. [Query the API](6-query-api/)
-7. [Conclusion](7-conclusion/)
-8. [References](8-resources/)
+1. [Chuẩn bị](1-prerequisites/)
+2. [Kiểm tra tại máy chủ cục bộ](2-test-local/)
+3. [Triển khai ứng dụng](3-deploy-app/)
+4. [Cập nhật ứng dụng](4-update-app/)
+5. [Truy vấn API](5-query-api/)
+6. [Kết luận](6-conclusion/)
+7. [Tham khảo](7-resources/)
