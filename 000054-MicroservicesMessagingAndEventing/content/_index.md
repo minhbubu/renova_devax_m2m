@@ -12,6 +12,8 @@ In this lab you will explore the different options the AWS platform has for mess
 #### Amazon SQS
 Amazon Simple Queue Service (SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems and serverless applications. SQS makes it simple and cost-effective to decouple and coordinate the components of a cloud application. Using SQS, you can send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be always available. SQS standard queues offer maximum throughput, best-effort ordering, and at-least-once delivery. SQS FIFO queues are designed to guarantee that messages are processed exactly once, in the exact order that they are sent, with limited throughput.
 
+SQS offers two types of message queues. Standard queues offer maximum throughput, best-effort ordering, and at-least-once delivery. SQS FIFO queues are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
+
 #### Amazon SNS
 Amazon Simple Notification Service (SNS) is a flexible, fully managed pub/sub messaging and mobile notifications service for coordinating the delivery of messages to subscribing endpoints and clients. With SNS you can fan-out messages to a large number of subscribers, including distributed systems and services, and mobile devices. It is easy to set up, operate, and reliably send notifications to all your endpoints – at any scale.
 
@@ -33,20 +35,11 @@ By the end of this lab, you will be able to:
 #### Technical Knowledge Prerequisites
 To successfully complete this lab, you should be familiar with basic navigation of the AWS Management Console and be comfortable editing scripts using a text editor.
 
-#### Environment
-All the resources required to begin this lab have already been provisioned and set up for you. If running in your own account, use this [**CloudFormation template**](https://workshops.devax.academy/monoliths-to-microservices/module5/files/Module5.template.yaml)
-
-The following diagram depicts the resources that were deployed in your AWS account.
-
-![Diagram](../../../images/1/0.png?width=50pc)
-
 #### Contents
 
 1. [Prerequisite](1-prerequisites/)
-2. [Database Setup](2-setup-database/)
-3. [Test Locally](3-test-local/)
-4. [Deploy application](4-deploy-app/)
-5. [Update the Application](5-update-app/)
-6. [Query the API](6-query-api/)
-7. [Conclusion](7-conclusion/)
-8. [References](8-resources/)
+2. [Exploring Messaging Options](2-2-messaging-options/)
+3. [Implementing Message Streaming Using Kinesis](3-message-streaming/)
+4. [Challenge](4-challenge/)
+5. [Conclusion](5-conclusion/)
+6. [Reference Resources](6-resources/)

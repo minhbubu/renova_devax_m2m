@@ -35,7 +35,7 @@ url = "https://www.facebook.com/groups/660548818043427/"
 weight = 20
 
 [Languages.vi]
-title = "DevAx - Chuyển đổi Monoliths sang Microservices - Microservices Messaging & Eventing"
+title = "DevAx - Chuyển đổi Monoliths sang Microservices - Microservices cho Truyền tin & Sự kiện"
 weight = 2
 languageName = "Tiếng Việt"
 

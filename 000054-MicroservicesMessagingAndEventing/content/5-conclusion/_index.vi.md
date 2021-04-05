@@ -1,5 +1,5 @@
 +++
-title = "Conclusion"
+title = "Kết luận"
 date = 2021
 weight = 5
 chapter = false
